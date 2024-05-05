@@ -34,3 +34,6 @@ nnoremap <leader>pf :action GotoFile<CR>
 " Tabs
 nnoremap <A-j> :action PreviousTab<cr>
 nnoremap <A-k> :action NextTab<cr>
+
+" jk as <ESC>
+nnoremap <jk> :action <ESC>
