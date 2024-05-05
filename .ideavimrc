@@ -36,4 +36,4 @@ nnoremap <A-j> :action PreviousTab<cr>
 nnoremap <A-k> :action NextTab<cr>
 
 " jk as <ESC>
-nnoremap <jk> :action <ESC>
+inoremap <jk> :action <ESC>
