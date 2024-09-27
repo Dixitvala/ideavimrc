@@ -21,6 +21,8 @@ let mapleader = " "
 " move line
 nnoremap <C-j> :m +1<CR>
 nnoremap <C-k> :m -2<CR>
+vnoremap <C-j> :m +1<CR>
+vnoremap <C-k> :m -2<CR>
 inoremap <C-j> <Esc>:m +1<CR>gi
 inoremap <C-k> <Esc>:m -2<CR>gi
 
@@ -29,14 +31,14 @@ nmap <leader>gp :action Git.Pull<cr>
 nmap <leader>gu :action Git.Push<cr>
 
 " shortcut for search file
-nnoremap <leader>pf :action GotoFile<CR>
+nnoremap <leader>sf :action GotoFile<CR>
 
 " Tabs
 nnoremap <A-j> :action PreviousTab<cr>
 nnoremap <A-k> :action NextTab<cr>
 
 " jk as <ESC>
-inoremap <jk> :action <ESC>
+inoremap jk <ESC>
+nnoremap <Enter> o<ESC>
+nnoremap <S-Enter> O<ESC>
 
-nnoremap <C-d> <C-d>M
-nnoremap <C-u> <C-u>M
